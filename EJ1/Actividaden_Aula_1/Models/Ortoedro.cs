@@ -44,22 +44,28 @@ namespace Actividaden_Aula_1.Models
         {
             double area = CalcularArea();
             double volumen = CalcularVolumen();
-            
-            string descripcion = $@"{{""Tipo"":""Ortoedro"",
-""Tapas"":
+
+            string descripcion = $@"
+
+{{
+""Tipo"":""Ortoedro"",
+""Bases"":
 [
-{Bases[0].Describir()}
-{Bases[1].Describir()}
+    {Bases[0].Describir()},
+    {Bases[1].Describir()}
 ],
 ""Laterales"":
 [
-{Laterales[0].Describir()}
-{Laterales[1].Describir()}
-{Laterales[2].Describir()}
-{Laterales[3].Describir()}
-]
-}}";
-            return descripcion ;
+    {Laterales[0].Describir()},
+    {Laterales[1].Describir()},
+    {Laterales[2].Describir()},
+    {Laterales[3].Describir()},
+],
+""Area"":""{CalcularArea()}"",
+""Volumen"":""{CalcularVolumen()}""
+}}
+";
+            return descripcion;
+            }
         }
-    }
 }

@@ -20,7 +20,13 @@ namespace Actividaden_Aula_1.Models
         }
         public string Describir()
         {
-            return $"Rectangulo : {Ancho},{Largo}";
+            return $@"
+{{
+    ""Tipo"":""Rectangulo"",
+    ""Largo"":""{Largo.ToString("f2")}"",
+    ""Ancho"":""{Ancho.ToString("f2")}"",
+    ""Area"":""{CalcularArea().ToString("f2")}""
+}}";
 
         }
    

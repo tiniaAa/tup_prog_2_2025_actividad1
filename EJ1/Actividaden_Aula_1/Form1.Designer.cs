@@ -34,10 +34,10 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(12, 28);
+            textBox1.Location = new Point(12, 12);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(442, 391);
+            textBox1.Size = new Size(442, 536);
             textBox1.TabIndex = 0;
             // 
             // button1
@@ -54,7 +54,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 576);
             Controls.Add(button1);
             Controls.Add(textBox1);
             Name = "Form1";

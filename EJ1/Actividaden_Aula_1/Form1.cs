@@ -14,6 +14,18 @@ namespace Actividaden_Aula_1
             Ortoedro objeto_3 = new Ortoedro(7,7,21);
             textBox1.Text = objeto_3.Describir();
 
+            Cubo objeto_2 = new Cubo(3);
+            //Describir(falta hacer)
+
+            Cubo Objeto_5 = new Cubo(7);
+            //Falta describir 
+
+
+
+
+
+
+
         }
     }
 }

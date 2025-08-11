@@ -27,7 +27,25 @@ namespace Actividaden_Aula_1.Models
             double volumen = cubo[0].Ancho;
             return Math.Pow(volumen,3);
         }
-        //metodo describir(falta investigar json)
+        public string Describir()
+        {
+
+            return $@"
+{{
+    ""Tipo"":""Cubo"",
+    ""Caras"":
+[
+    {cubo[0].Describir()},
+    {cubo[1].Describir()},
+    {cubo[2].Describir()},
+    {cubo[3].Describir()},
+    {cubo[4].Describir()},
+    {cubo[5].Describir()},
+]
+    ""Area"":""{CalcularArea().ToString("f2")}"",
+    ""Volumen"":""{CalcularVolumen().ToString("f2")}""
+}}";
+        }
 
     }
 }

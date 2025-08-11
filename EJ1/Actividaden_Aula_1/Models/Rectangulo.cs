@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,9 +24,9 @@ namespace Actividaden_Aula_1.Models
             return $@"
 {{
     ""Tipo"":""Rectangulo"",
-    ""Largo"":""{Largo.ToString("f2")}"",
-    ""Ancho"":""{Ancho.ToString("f2")}"",
-    ""Area"":""{CalcularArea().ToString("f2")}""
+    ""Largo"":""{Largo.ToString("f2", CultureInfo.InvariantCulture)}"",
+    ""Ancho"":""{Ancho.ToString("f2", CultureInfo.InvariantCulture)}"",
+    ""Area"":""{CalcularArea().ToString("f2",CultureInfo.InvariantCulture)}""
 }}";
 
         }

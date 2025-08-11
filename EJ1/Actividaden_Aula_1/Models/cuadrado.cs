@@ -21,6 +21,19 @@ namespace Actividaden_Aula_1.Models
             double area = Ancho*Largo;
             return area ;
         }
-        //falta metodo describir (averiguar sobre el json)
+        
+
+        public string Describir()
+        {
+
+            return $@"
+{{
+""Tipo"":""Cuadrado"",
+""Largo"":""{Largo.ToString("f2")}"",
+""Ancho"":""{Ancho.ToString("f2")}"",
+""Area"":""{CalcularArea().ToString("f2")}""
+}}
+";
+        }
     }
 }

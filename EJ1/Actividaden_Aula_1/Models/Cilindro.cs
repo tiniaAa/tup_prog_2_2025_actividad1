@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -30,6 +31,23 @@ namespace Actividaden_Aula_1.Models
             double volumen = bases[0].CalcularArea() * rectangulo.Largo;
             return volumen;
         }
-        //falta realizar describir
+        public string Describir()
+        {
+            
+            
+            return$@"
+{{
+""Tipo"":""Cilindo"",
+""Base"":
+[
+{bases[0].Describir()},
+{bases[1].Describir()}
+],
+
+""Rectangulo desarrollado"":{rectangulo.Desscribir()},
+""Area"":{CalcularArea().ToString("f2")},
+""Volumen"":{CalcularVolumen().ToString("f2")}
+}}";
+        }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -61,8 +62,8 @@ namespace Actividaden_Aula_1.Models
     {Laterales[2].Describir()},
     {Laterales[3].Describir()},
 ],
-""Area"":""{CalcularArea()}"",
-""Volumen"":""{CalcularVolumen()}""
+""Area"":""{CalcularArea().ToString("f2", CultureInfo.InvariantCulture)}"",
+""Volumen"":""{CalcularVolumen().ToString("f2", CultureInfo.InvariantCulture)}""
 }}
 ";
             return descripcion;

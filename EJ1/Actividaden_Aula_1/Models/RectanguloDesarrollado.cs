@@ -22,7 +22,10 @@ namespace Actividaden_Aula_1.Models
             double area = Largo * Ancho;
             return area ;
         }
-
+        public string Desscribir()
+        {
+            return @$"";
+        }
 
     }
 }

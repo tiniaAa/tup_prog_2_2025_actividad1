@@ -18,7 +18,18 @@ namespace Actividaden_Aula_1.Models
             double area = Math.PI*Math.Pow(Radio,2);
             return area;
         }
-        //describir (hacer despues  )
+        public string Describir()
+        {
+
+            return @$"
+{{
+""Tipo"":""Circulo"",
+""Radio"":""{Radio.ToString("f2")}"",
+""Area"":""{CalcularArea().ToString("f2")}"",
+
+
+}}";
+        }
 
 
     }
